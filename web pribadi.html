@@ -7,7 +7,7 @@
     <title>Web Perdiansyah</title>
     <link rel="stylesheet" href="web.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-    <link rel="shorcut icon" href="website pribadi/favicon.jpeg" type="image/png">
+    <link rel="shorcut icon" href="profil/favicon.jpeg" type="image/png">
 </head>
 
 <body>
@@ -50,22 +50,29 @@
                 teman-teman untuk memberikan review dan saran pada portofolio saya ini di guestbook dibawah ini.
             </p>
             <div class="contack">
-                <p class="contack-me">follow sosmed me:
-
+                <div class="contack-me">
                     <a href="https://www.instagram.com/ansyhprdi10">
                         <i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="contack-me">
                     <a href="https://www.tiktok.com/@ansyhprdi">
                         <i class="fa-brands fa-tiktok"></i></a>
+                </div>
+                <div class="contack-me">
                     <a href="https://www.facebook.com/ansyhperdi10">
                         <i class="fa-brands fa-facebook"></i></a>
+                </div>
+                <div class="contack-me">
                     <a href="https://github.com/PERDI-TI">
                         <i class="fa-brands fa-github github"></i></a>
-                </p>
-
+                </div>
+            </div>
+            <div class="btn-contack">
                 <a href="https://wa.me/6281373605892" target="_blank" class="btn-about">
                     <i class="fa-brands fa-whatsapp"></i>Hubungi saya</a>
                 <a href="#guestbook" class="btn-about">guestbook</a>
             </div>
+
         </div>
     </section>
     <section id="Journey">
@@ -80,7 +87,7 @@
             <div class="pendidikan-container">
 
                 <div class="pendidikan">
-                    <img src="website pribadi/smp.png" alt="sd">
+                    <img src="profil/smp.png" alt="sd">
                     <h3>SD NEGERI PENDINGAN</h3>
                     <P>Saya telah lulus di sd negeri pendingan Tahun 2012-2018</P>
                     <button class="btn">
@@ -91,7 +98,7 @@
                 </div>
 
                 <div class="pendidikan">
-                    <img src="website pribadi/smp.png" alt="Sertifikat 2">
+                    <img src="profil/smp.png" alt="Sertifikat 2">
                     <h3>SMP NEGERI SEMANGUS</h3>
                     <P>saya telah lulus di smp negeri semangus 2018-2021</P>
                     <button class="btn">
@@ -103,7 +110,7 @@
                 </div>
 
                 <div class="pendidikan">
-                    <img src="website pribadi/SMA.png" alt="SMA">
+                    <img src="profil/SMA.png" alt="SMA">
                     <h3>SMA NEGERI SEMANGUS</h3>
                     <P>saya telah lulu sma dengan jurusan MIPA pada Tahun 2021-2024</P>
                     <button class="btn">
@@ -113,7 +120,7 @@
                     </button>
                 </div>
                 <div class="pendidikan">
-                    <img src="website pribadi/unpari.jpeg" alt="unpari">
+                    <img src="profil/unpari.jpeg" alt="unpari">
                     <h3>UNIVESITAS PGRI SILAMPARI</h3>
                     <P>Saya sekarang sedang menempuh strata-1 Teknologi informasi di Universitas PGRI Silampari</P>
                     <button class="btn">
@@ -126,31 +133,69 @@
         </div>
     </section>
     <section id="Sertifikat">
-        <div class="Sertifikat">
-            <h1>My Sertifikat</h1>
+        <div class="info">
+            <h1>Sertifikat && modal</h1>
+            <p>selain itu saya juga sering mendapatkan sertifikat dan membuat modal.
+                silakan klik menu dibawah ini untuk melihat sertifikat, modal dan skill.
+            </p>
+        </div>
+        <div class="tabs">
+            <button class="tab active" onclick="showTab('sertifikat')">sertifikat</button>
+            <button class="tab" onclick="showTab('project')">project</button>
+            <button class="tab" onclick="showTab('skil')">skill</button>
+        </div>
+        <div class="content active" id="sertifikat">
+            <div class="scroll">
+                <div class="card-sertifikat">
+                    <img src="profil/sertifikat1.jpeg" alt="poto">
+                </div>
+                <div class="card-sertifikat">
+                    <img src="profil/sertifikat1.jpeg" alt="poto">
+                </div>
+            </div>
+        </div>
 
-            <div class="Sertifikat1">
-                <div class="cemerlang">
-                    <div class="prestasi">
-                        <img src="website pribadi/sertifikat1.jpeg" alt="sertifikat 1">
-                        <button class="btn-sertifikat">detail</button>
-                    </div>
-
-                    <div class="prestasi">
-                        <img src="website pribadi/sertifikat1.jpeg" alt="sertifikat 2">
-                        <button class="btn-sertifikat">detail</button>
-                    </div>
-
-                    <div class="prestasi">
-                        <img src="website pribadi/sertifikat1.jpeg" alt="sertifikat 3">
-                        <button class="btn-sertifikat">detail</button>
-                    </div>
+        <div class="content" id="project">
+            <div class="scroll">
+                <div class="card-project">
+                    <img src="profil/project1.png">
+                    <h3>photobox sederhana</h3>
+                    <p>website photobox sederhana mengunakan html, css dan script js</p>
+                    <button class="btn-skil"><i class="fa-brands fa-html5 html"></i>html</i></button>
+                    <button class="btn-skil"><i class="fa-brands fa-css3-alt css "></i>css</button>
+                    <button class="btn-skil"><i class="fa-brands fa-js "></i>js</button>
+                    <button class="btn-project">live</button>
+                    <button class="btn-project">github</button>
+                </div>
+                <div class="card-project">
+                    <img src="profil/project2.png">
+                    <h3>portofolio sederhana</h3>
+                    <p>website portofolio sederhana mengunakan html, css dan script js</p>
+                    <button class="btn-skil"><i class="fa-brands fa-html5 html"></i>html</i></button>
+                    <button class="btn-skil"><i class="fa-brands fa-css3-alt css "></i>css</button>
+                    <button class="btn-skil"><i class="fa-brands fa-js "></i>js</button>
+                    <button class="btn-project">live</button>
+                    <button class="btn-project">github</button>
+                </div>
+            </div>
+        </div>
+        <div class="content" id="skil">
+            <div class="skil">
+                <div class="card-skil"><i class="fa-brands fa-html5 html"></i>
+                    <p>HTML</p>
+                </div>
+                <div class="card-skil"><i class="fa-brands fa-css3-alt css "></i>
+                    <p>css</p>
+                </div>
+                <div class="card-skil"><i class="fa-brands fa-php php"></i>
+                    <p>php</p>
                 </div>
             </div>
         </div>
     </section>
+
     <section id="guestbook">
-        <div class="sosmed">
+        <div class="guest">
             <h1>Guestbook</h1>
             <p>silakan kasih masukan saran dan review di bawah ini</p>
         </div>
@@ -172,6 +217,15 @@
         </div>
 
         <script>
+            //sertifikat
+            function showTab(id) {
+                document.querySelectorAll('.content').forEach(c => c.classList.remove('active'));
+                document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+
+                document.getElementById(id).classList.add('active');
+                event.target.classList.add('active');
+            }
+
             // ambil data saat halaman dibuka
             let reviews = JSON.parse(localStorage.getItem("reviews")) || [];
 
@@ -236,9 +290,4 @@
     </footer>
 </body>
 
-
 </html>
-
-
-
-
